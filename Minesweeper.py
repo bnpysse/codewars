@@ -15,13 +15,15 @@ solution(matrix) = [[1, 2, 1],
                     [2, 1, 1],
                     [1, 1, 1]]
 """
+from typing import Callable, Any, Union
+
 matrix = [[True, False, False, True],
           [False, False, True, False],
           [True, True, False, True]]
 direct = ((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
 rows = len(matrix)
 cols = len(matrix[0])
-in_range = lambda x: 0 <= x[0] < rows and 0 <= x[1] < cols
+in_range: Callable[[Any], Union[bool, Any]] = lambda x: 0 <= x[0] < rows and 0 <= x[1] < cols
 stack = list()
 for r in range(rows):
     for c in range(cols):

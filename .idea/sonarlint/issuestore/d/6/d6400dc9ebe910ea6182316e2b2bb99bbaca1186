@@ -1,0 +1,4 @@
+
+6python:S125;"Remove this commented out code.(¸–ÛÎ
+«python:S1515?"’Add a parameter to the parent lambda function and use variable "s" as its default value; The value of "s" might change at the next loop iteration.(Àäº„
+«python:S1515@"’Add a parameter to the parent lambda function and use variable "s" as its default value; The value of "s" might change at the next loop iteration.(Å¨†‚
